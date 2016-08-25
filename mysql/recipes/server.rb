@@ -22,5 +22,5 @@ end
 
 case node['platform_family']
 when 'debian'
-  include_recipe 'mysql::_server_debian'
+  include_recipe 'mysql::default'
 end
