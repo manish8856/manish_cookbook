@@ -24,10 +24,12 @@ end
 #----
 # Install software
 #----
+if node['mysql'].present?
 node['mysql']['server']['packages'].each do |name|
   package name do
     action :install
   end
+end
 end
 
 node['mysql']['server']['directories'].each do |key, value|
