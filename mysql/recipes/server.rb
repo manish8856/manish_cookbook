@@ -21,12 +21,6 @@ else
 end
 
 case node['platform_family']
-when 'rhel'
-  include_recipe 'mysql::_server_rhel'
 when 'debian'
   include_recipe 'mysql::_server_debian'
-when 'mac_os_x'
-  include_recipe 'mysql::_server_mac_os_x'
-when 'windows'
-  include_recipe 'mysql::_server_windows'
 end
