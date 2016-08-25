@@ -1,1 +1,1 @@
-depends 'mysql', '~> 5.5'
+depends 'mysql', '~> 5.0.0'
