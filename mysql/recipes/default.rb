@@ -31,8 +31,7 @@ if node['mysql'].present? && node['mysql']['server'].present?
     end
   end
 end
-puts node.inspect
-exit
+raise node.inspect
 node['mysql']['server']['directories'].each do |key, value|
   directory value do
     owner     'mysql'
